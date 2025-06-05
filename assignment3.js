@@ -1,19 +1,18 @@
 // Question 1
 let states = ["Andhra Pradesh", "Bihar", "Odisha", "Uttar Pradesh", "Maharashtra", "Kerala"];
 let filteredStates = states.filter(state => !["A", "E", "I", "O", "U"].includes(state[0].toUpperCase()));
-console.log("Q1:", filteredStates); // States not starting with vowels
+console.log("Q1:", filteredStates);
 
 // Question 2
 let str = 'I love my India';
 let reversed = str.split(" ").reverse().join(" ");
-console.log("Q2:", reversed); // 'India my love I'
+console.log("Q2:", reversed); 
 
 // Question 3
 let string = "INDIA".split('');
 string.splice(2, 3, 'O', 'N', 'E', 'S', 'I', 'A');
 let result = string.join('');
-console.log("Q3:", result); // 'INDONESIA'
-
+console.log("Q3:", result); 
 // Question 4
 let sentence = "JavaScript is a powerful language";
 let vowels = 'aeiouAEIOU';
