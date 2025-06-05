@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Sample Webpage</title>
+    <style>
+           * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "menu menu"
+        "sidebar main"
+        "footer footer";
+      grid-template-columns: 200px 1fr;
+      grid-template-rows: 80px 50px auto 60px;
+      min-height: 100vh;
+    }
+
+    header {
+      grid-area: header;
+      background-color: #333;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+
+    .logo {
+      font-size: 1.5em;
+    }
+
+    .social-links a {
+      color: white;
+      margin-left: 15px;
+      text-decoration: none;
+    }
+
+    nav {
+      grid-area: menu;
+      background-color: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    nav a:hover {
+      background-color: #666;
+    }
+
+    aside {
+      grid-area: sidebar;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+
+    main {
+      grid-area: main;
+      padding: 20px;
+      background-color: #fff;
+    }
+
+    .box {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+
+    .box img {
+      max-width: 100%;
+      height: auto;
+      margin: 10px 0;
+    }
+
+    footer {
+      grid-area: footer;
+      background-color: #222;
+      color: white;
+      text-align: center;
+      line-height: 60px;
+    }
+
+
+    </style>
+</head>
+<body>
+    <header>
+      <div class="logo">MyLogo</div> 
+      <div class="social-links">
+        <a href="https://www.facebook.com/">Facebook</a>
+        <a href="https://x.com/home">Twitter</a>
+        <a href="https://www.instagram.com/">Instagram</a>
+      </div> 
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+    <aside>
+        <h2>Side-bar Content</h2>
+        <p>Custom data, useful links</p>
+    </aside>
+
+    <main>
+        <div class="box">
+            <h2>Code-Sign</h2>
+            <img src="https://static.vecteezy.com/system/resources/previews/008/468/014/non_2x/red-code-sign-on-white-background-flat-style-red-code-icon-symbol-for-your-web-site-design-logo-app-ui-code-symbol-vector.jpg" alt="Code-Sign">
+            <p>This is a coding sign.</p>
+
+            <h2>Hashed-bit Logo</h2>
+            <img src="https://media.licdn.com/dms/image/v2/D4D0BAQG4BMTysvXT-A/company-logo_200_200/company-logo_200_200/0/1691440617423/hashedbit_innovations_logo?e=2147483647&v=beta&t=8EaFkOaEcSz2r6tpn0Q9883elQXo5a3wSDR5LxleLnk" alt="Hashed-bit logo">
+            <p>This is a Hashed-bitlogo.</p>
+
+            <h2>Html-Sign</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s" alt="Html-Sign">
+            <p>This is a Html sign.</p>
+        </div>
+    </main>
+     <footer>
+        This is the first assignment. Thank you!
+     </footer>
+</body>
+</html>
