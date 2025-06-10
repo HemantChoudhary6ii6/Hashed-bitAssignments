@@ -1,8 +1,11 @@
 import { useEffect, useState } from 'react';
+import './app.css';
+
 const IPLPointsTable = () => {
   const [teams, setTeams] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -19,12 +22,14 @@ const IPLPointsTable = () => {
     };
     fetchData();
   }, []);
-  if (loading) return <p style={styles.message}>Loading IPL Points Table...</p>;
-  if (error) return <p style={{ ...styles.message, color: 'red' }}>{error}</p>;
+
+  if (loading) return <p className="message">Loading IPL Points Table...</p>;
+  if (error) return <p className="message" style={{ color: 'red' }}>{error}</p>;
+
   return (
-    <div style={styles.wrapper}>
-      <h2 style={styles.heading}>IPL 2022 Points Table</h2>
-      <table style={styles.table}>
+    <div className="wrapper">
+      <h2 className="heading">IPL 2022 Points Table</h2>
+      <table className="table">
         <thead>
           <tr>
             <th>Pos</th>
@@ -38,7 +43,7 @@ const IPLPointsTable = () => {
         </thead>
         <tbody>
           {teams.map((team, index) => (
-            <tr key={team.Team} style={index % 2 === 0 ? styles.evenRow : styles.oddRow}>
+            <tr key={team.Team} className={index % 2 === 0 ? 'evenRow' : 'oddRow'}>
               <td>{index + 1}</td>
               <td>{team.Team}</td>
               <td>{team.Matches}</td>
@@ -53,37 +58,5 @@ const IPLPointsTable = () => {
     </div>
   );
 };
-const styles = {
-  wrapper: {
-    padding: '20px',
-    fontFamily: 'Segoe UI, sans-serif',
-    textAlign: 'center',
-  },
-  heading: {
-    marginBottom: '20px',
-    color: '#0077cc',
-  },
-  message: {
-    textAlign: 'center',
-    fontSize: '18px',
-    marginTop: '50px',
-  },
-  table: {
-    width: '90%',
-    maxWidth: '800px',
-    margin: '0 auto',
-    borderCollapse: 'collapse',
-    boxShadow: '0 0 12px rgba(0, 0, 0, 0.1)',
-  },
-  evenRow: {
-    backgroundColor: '#f2faff',
-  },
-  oddRow: {
-    backgroundColor: '#ffffff',
-  },
-  'th, td': {
-    padding: '10px',
-    border: '1px solid #ccc',
-  },
-};
+
 export default IPLPointsTable;

@@ -1,0 +1,44 @@
+/* General Page Wrapper */
+.wrapper {
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+/* Heading Style */
+.heading {
+  margin-bottom: 20px;
+  color: #0077cc;
+}
+
+/* Loading / Error Message */
+.message {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 50px;
+}
+
+/* Table Styles */
+.table {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Header and Cell */
+.table th,
+.table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Alternate Row Colors */
+.evenRow {
+  background-color: #f2faff;
+}
+
+.oddRow {
+  background-color: #ffffff;
+}
