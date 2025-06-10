@@ -3,22 +3,22 @@ import { BrowserRouter as Router, Routes, Route, Link, useParams, useNavigate } 
 import "./app.css";
 
 const movies = [
-  { id: 1, title: "Iron Man", img: "https://i.ibb.co/LgM0Yss/ironman.jpg" },
-  { id: 2, title: "Captain America", img: "https://i.ibb.co/0qKmQKW/captain.jpg" },
-  { id: 3, title: "Thor", img: "https://i.ibb.co/x58cvDn/thor.jpg" },
-  { id: 4, title: "Hulk", img: "https://i.ibb.co/jT3gqbw/hulk.jpg" },
-  { id: 5, title: "Black Panther", img: "https://i.ibb.co/ZSM5RvM/blackpanther.jpg" },
-  { id: 6, title: "Doctor Strange", img: "https://i.ibb.co/4R0vJXr/strange.jpg" },
-  { id: 7, title: "Ant-Man", img: "https://i.ibb.co/nnbwjzy/antman.jpg" },
-  { id: 8, title: "Spider-Man", img: "https://i.ibb.co/wWZk5qP/spiderman.jpg" },
-  { id: 9, title: "Black Widow", img: "https://i.ibb.co/Xx4P98f/blackwidow.jpg" },
-  { id: 10, title: "Captain Marvel", img: "https://i.ibb.co/zXbnJTK/captainmarvel.jpg" },
-  { id: 11, title: "Shang-Chi", img: "https://i.ibb.co/yRfdRtF/shangchi.jpg" },
-  { id: 12, title: "Guardians of the Galaxy", img: "https://i.ibb.co/wr6Xdbq/guardians.jpg" },
-  { id: 13, title: "Eternals", img: "https://i.ibb.co/YTWdGcH/eternals.jpg" },
-  { id: 14, title: "Loki", img: "https://i.ibb.co/hLR2y2g/loki.jpg" },
-  { id: 15, title: "WandaVision", img: "https://i.ibb.co/XtKjStc/wanda.jpg" },
-  { id: 16, title: "Hawkeye", img: "https://i.ibb.co/6FgSdt7/hawkeye.jpg" },
+  { id: 1, title: "Iron Man", img: "https://cdn.marvel.com/content/1x/ironman_lob_crd_01_3.jpg" },
+  { id: 2, title: "Captain America", img: "https://cdn.marvel.com/content/1x/captainamerica_lob_crd_01.jpg" },
+  { id: 3, title: "Thor", img: "https://cdn.marvel.com/content/1x/thor_lob_crd_01.jpg" },
+  { id: 4, title: "Hulk", img: "https://cdn.marvel.com/content/1x/theincrediblehulk_lob_crd_03.jpg" },
+  { id: 5, title: "Black Panther", img: "https://cdn.marvel.com/content/1x/blackpanther_lob_crd_01_4.jpg" },
+  { id: 6, title: "Doctor Strange", img: "https://cdn.marvel.com/content/1x/doctorstrangeinthemultiverseofmadness_lob_crd_02_3.jpg" },
+  { id: 7, title: "Ant-Man", img: "https://cdn.marvel.com/content/1x/ant-man_lob_crd_01_8.jpg" },
+  { id: 8, title: "Spider-Man", img: "https://cdn.marvel.com/content/1x/spider-manfarfromhome_lob_crd_04_3.jpg" },
+  { id: 9, title: "Black Widow", img: "https://cdn.marvel.com/content/1x/blackwidow_lob_crd_06.jpg" },
+  { id: 10, title: "Captain Marvel", img: "https://cdn.marvel.com/content/1x/captainmarvel_lob_crd_06.jpg" },
+  { id: 11, title: "Shang-Chi", img: " https://cdn.marvel.com/content/1x/shangchi_lob_crd_07.jpg"},
+  { id: 12, title: "Guardians of the Galaxy", img: "https://cdn.marvel.com/content/1x/guardiansofthegalaxy_lob_crd_03.jpg" },
+  { id: 13, title: "Eternals", img: "https://cdn.marvel.com/content/1x/eternals_lob_crd_06.jpg" },
+  { id: 14, title: "Loki", img: "https://cdn.marvel.com/content/1x/loki_lob_crd_04.jpg" },
+  { id: 15, title: "WandaVision", img: "https://cdn.marvel.com/content/1x/wandavision_lob_crd_06.jpg" },
+  { id: 16, title: "Hawkeye", img: "https://cdn.marvel.com/content/1x/hawkeye_lob_crd_01.jpg" },
 ];
 
 function MovieList() {
