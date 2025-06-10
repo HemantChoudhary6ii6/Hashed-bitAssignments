@@ -1,60 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toggling the theme</title>
     <style>
         .day {
-    background-color: white;
-    color: black;
-}
+            background-color: white;
+            color: black;
+        }
 
-.night {
-    background-color: black;
-    color: gold;
-}
+        .night {
+            background-color: black;
+            color: gold;
+        }
 
-.button_night {
-    background-color: darkblue;
-    color: white;
-}
+        .button_night {
+            background-color: darkblue;
+            color: white;
+        }
 
-.button_day{
-    background-color: white;
-    color: black;
-}
+        .button_day {
+            background-color: white;
+            color: black;
+        }
 
-html, body {
-    margin: 0px;
-    height: 100%;
-}
+        html,
+        body {
+            margin: 0px;
+            height: 100%;
+        }
 
-#app {
-    height: 100%;
-    padding: 10px;
-}
+        #app {
+            height: 100%;
+            padding: 10px;
+        }
     </style>
 </head>
-<body>
-    
-<div id="app" class="day">
-    <p>I am a HashedBit student, ready to become an awesome full stack developer</p>
-    <button onclick="swapTheme()" id="swap" class="button_day">Toggle theme</button>
-    <script>
-        function swapTheme() {
- const appDiv = document.getElementById("app");
-    const button = document.getElementById("swap");
 
-    if (appDiv.className === "day") {
-      appDiv.className = "night";
-      button.className = "button_night";
-    } else {
-      appDiv.className = "day";
-      button.className = "button_day";
-    }
-}
-    </script>
-</div>
+<body>
+
+    <div id="app" class="day">
+        <p>I am a HashedBit student, ready to become an awesome full stack developer</p>
+        <button onclick="swapTheme()" id="swap" class="button_day">Toggle theme</button>
+        <script>
+            function swapTheme() {
+                const appDiv = document.getElementById("app");
+                const button = document.getElementById("swap");
+
+                if (appDiv.className === "day") {
+                    appDiv.className = "night";
+                    button.className = "button_night";
+                } else {
+                    appDiv.className = "day";
+                    button.className = "button_day";
+                }
+            }
+        </script>
+    </div>
 </body>
+
 </html>
