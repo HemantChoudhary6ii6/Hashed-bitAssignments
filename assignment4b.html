@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div creation</title>
+</head>
+
+<body>
+    <div id="container">
+
+    </div>
+    <script>
+        function createDiv(width, height, text) {
+            let d = document.createElement("div"); 
+            d.style.width = width + "px";
+            d.style.height = height + "px";
+            d.innerText = text; 
+            d.style.border = "2px solid black";
+            d.style.margin = "15px";
+            d.style.padding = "15px";
+            document.getElementById("container").appendChild(d);
+        }
+        createDiv(85,150,"hemant choudhary");
+        createDiv(30,60,"hello from this side");
+       
+    
+    </script>
+
+</body>
+
+</html>
