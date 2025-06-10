@@ -1,0 +1,37 @@
+/* app.css */
+.container {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 8px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}
